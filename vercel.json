@@ -1,7 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/api/login",             "destination": "/api/index.py" },
-    { "source": "/api/callback",          "destination": "/api/index.py" },
-    { "source": "/api/playback/:path*",   "destination": "/api/playback.py" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/app.py" }
   ]
 }

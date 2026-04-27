@@ -1,0 +1,6 @@
+loose_pick_toon/
+│
+├── main.py              # Entry point
+├── ui_island.py         # PySide6 UI & Animations
+├── spotify_engine.py    # Spotify API Integration (Spotipy)
+└── assets/              # Icons and styling

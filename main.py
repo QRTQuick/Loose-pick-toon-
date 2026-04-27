@@ -1,4 +1,7 @@
 import sys
+from dotenv import load_dotenv
+load_dotenv()
+
 from PySide6.QtWidgets import QApplication
 from spotify_engine import SpotifyController
 from ui_island import LoosePickIsland
